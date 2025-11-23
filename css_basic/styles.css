@@ -42,3 +42,60 @@ header, footer {
         float: none;
     }
 }
+
+/* General Styles */
+body {
+    background-color: #f4f4f4; /* Light background color */
+    font-size: 16px;           /* Base font size */
+}
+
+/* Header Styles */
+header {
+    background-color: #333;    /* Dark background for the header */
+    color: white;              /* White text color */
+    text-align: center;        /* Centered text */
+}
+
+header a {
+    color: white;              /* White link color */
+    padding: 10px 20px;       /* Padding around links */
+}
+
+/* Logo Styles */
+.logo {
+    font-size: 40px;           /* Larger font size for the logo */
+    display: inline-block;     /* Ensure it aligns well with text */
+}
+
+/* Article Styling */
+article {
+    background-color: white;   /* White background for article */
+    border: 1px solid #ccc;    /* Light gray border */
+    border-radius: 8px;        /* Rounded corners */
+    padding: 20px;             /* Padding inside the article */
+}
+
+/* Aside Styling */
+aside {
+    background-color: #fafafa;  /* Light gray background */
+    border-left: 3px solid #f80002; /* Left border for emphasis */
+    padding: 15px;             /* Padding inside the aside */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;    /* Dark background for footer */
+    color: white;              /* White text color */
+    text-align: center;        /* Centered text */
+    padding: 10px;             /* Padding */
+}
+
+/* Responsive Modifications */
+@media (max-width: 800px) {
+    article {
+        padding: 10px;         /* Less padding on small screens */
+    }
+    aside {
+        padding: 10px;         /* Less padding on small screens */
+    }
+}
