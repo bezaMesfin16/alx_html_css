@@ -1,0 +1,236 @@
+
+/* font source-sans-pro black*/
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-Black.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* font source-sans-pro regular*/
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font source-sans-pro black italic */
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-BlackIt.otf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* font source-sans-pro bold */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* font source-sans-pro bold italic */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-BoldIt.otf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* font source-sans-pro extra light */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-ExtraLight.otf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* font source-sans-pro extra light italic */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-ExtraLightIt.otf');
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* font source-sans-pro italic */
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-It.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* font source-sans-pro light */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* font source-sans-pro light italic */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-LightIt.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* font source-sans-pro semi bold */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-Semibold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* font source-sans-pro semi bold italic */
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url('source-sans-pro/SourceSansPro-SemiboldIt.otf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Variables */
+
+:root {
+    --color-primary: #C271FF;
+    --color-light-black: #071629;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-gray: #D8D8D8;
+    --radial-gradient: #29303D00, #071629;
+
+    --primary-text-color: var(--color-white);
+    --secondary-text-color: var(--color-black);
+
+    --font-family-base: 'Source Sans Pro';
+    --font-align: center;
+    --font-style: normal;
+
+
+    /* HEADER */
+
+    --header-width: 68.96rem;
+    --header-height: 1.84rem;
+    --header-font-family: var(--font-family-base);
+    --header-font-size: 0.93rem;
+    --header-menu-height: 0.75rem;
+    --header-menu-font-weight: 700;
+    --header-menu-line-height: normal;
+    --header-menu-font-style: var(--font-style);
+    --header-font-color: var(--color-white);
+
+    /* LOGO */
+
+    --logo-width: 10.44rem;
+    --logo-height: 1.84rem;
+    
+    /* LINKS */
+
+    --link-text-color: var(--color-white);
+    --link-text-decoration: none;
+
+    /* MAIN */
+
+    --main-text-color: var(--color-white);
+    --main-font-family: var(--font-family-base);
+    --main-heading-font-size: 7.5rem;
+
+    /* BUTTON */
+    /* --button-width: 10.12rem; */
+    /* --button-height: 4.75rem; */
+    --button-font-size: 1rem;
+    --button-background-color: var(--color-primary);
+    --button-font-weight: 600;
+    --button-font-style: var(--font-style);
+    --button-line-height: normal;
+    --button-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.50);
+    --button-text-color: var(--color-white);
+    --button-border-radius: 50px;
+
+    
+}
+
+/* Base */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'source-sans-pro';
+}
+
+body {
+    font-family: var(--font-family-base);
+    min-width: 90rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'source-sans-pro';
+}
+
+button {
+    text-align: var(--font-align);
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    padding: 1rem 2rem;
+    border-radius: var(--button-border-radius);
+    box-shadow: var(--button-box-shadow);
+    border: none;
+    font-size: var(--button-font-size);
+    font-weight: 600;
+    font-family: 'source-sans-pro';
+}
+
+/* Header And Banner */
+
+.banner {
+    background-image: url(image/Object.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: var(--font-align);
+    background-color: #071629;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+
+nav>a {
+    color: var(--link-text-color);
+    text-decoration: var(--link-text-decoration);
+    font-weight: var(--header-menu-font-weight);   
+    line-height: var(--header-menu-line-height);
+    font-style: var(--header-menu-font-style);
+    font-size: var(--header-font-size);
+    height: var(--header-menu-height);
+    padding-left: 3rem;
+}
+
+.main1 {
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
