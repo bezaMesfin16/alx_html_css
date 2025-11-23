@@ -54,3 +54,74 @@ To complete this task, I created a file named styles.css and imported it to the 
 ```
 <link rel="stylesheet" href="styles.css">
 ```
+
+## TASK 2
+
+### Header And Banner
+
+We were asked to recreate the header section of the above wep page.
+
+### Outcome Of Task 2
+
+There is a preview of the finished header
+
+![Preview of completed header](/css_advanced/image/header.png)
+
+## TASK 3
+
+### Quotes
+
+For this task, we were asked to recreate the quote section.
+
+### Outcome Of Task 3
+
+Here is a preview of the completed task
+
+![preview of completed task 3](/css_advanced/image/quote.png)
+
+## TASK 4
+
+### Videos List
+
+For this task, we were asked to recreate the video list section.
+
+### Outcome Of Task 4
+
+Here is a preview of the completed task
+
+![preview of completed task 4](/css_advanced/image/tutorial.png)
+
+## TASK 5
+
+### Membership
+
+For this task, we were asked to recreate the membership section.
+
+### Outcome Of Task 5
+
+Here is the outcome of the completed task.
+
+![Outcome of task 5](/css_advanced/image/membership.png)
+
+## TASK 6
+
+### FAQ
+
+We were asked to recreate the FAQ section.
+
+### Outcome Of Task 6
+
+Here is a preview of the completed task.
+
+![Preview of completed task 6](/css_advanced/image/faq.png)
+
+## TASK 7
+
+### Footer
+
+We were asked to recreate the footer section.
+### Outcome Of Task 7
+
+Here is the outcome of the task
+
+![completed task 7](/css_advanced/image/footer.png)
