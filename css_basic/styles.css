@@ -1,4 +1,4 @@
-/* Apply flexbox styles to the body */
+/* Apply flexbox styles to the body         */
 body {
     display: flex;                /* Enable flexbox layout */
     flex-direction: column;      /* Arrange children in a column */
