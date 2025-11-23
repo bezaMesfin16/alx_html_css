@@ -1,0 +1,29 @@
+/* Apply flexbox styles to the body */
+body {
+    display: flex;                /* Enable flexbox layout */
+    flex-direction: column;      /* Arrange children in a column */
+}
+
+/* Apply flexbox styles to the main element */
+main {
+    display: flex;               /* Enable flexbox layout */
+    flex-direction: row;        /* Arrange children in a row */
+    flex: auto;                 /* Allow main to take up available space */
+}
+
+/* Styles for article */
+article {
+    flex: 2;                    /* Take up 2 parts of the space (⅔ of width) */
+    overflow-y: auto;          /* Allow vertical scrolling */
+}
+
+/* Styles for aside */
+aside {
+    flex: 1;                    /* Take up 1 part of the space (⅓ of width) */
+    overflow-y: auto;          /* Allow vertical scrolling */
+}
+
+/* Styles for header and footer (optional) */
+header, footer {
+    /* Add any additional styling needed for header and footer */
+}
