@@ -525,3 +525,27 @@ h1 {
     font-size: 60px;
     font-weight: 300;
 }
+
+footer {
+    background-color: #071629;
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.social-sec {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social {
+    padding-left: 20px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.3517;
+    padding-top: 80px;
+    color: var(--color-white);
+}
