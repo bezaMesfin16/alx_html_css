@@ -38,3 +38,19 @@ To complete this task, I used this command:
 ```
 cp ~/alx_html_css/html_advanced/index.html ~/alx_html_css/css_advanced/index.html
 ```
+
+## Task 1 
+
+### Import The Style
+
+For this task, we were asked to:
+* Create the file styles.css
+* Import styles.css in the head of your index.html
+
+### Outcome Of Task 1
+
+To complete this task, I created a file named styles.css and imported it to the html file using:
+
+```
+<link rel="stylesheet" href="styles.css">
+```
