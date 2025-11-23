@@ -448,3 +448,52 @@ h1 {
     font-weight: 600;
     line-height: 27px;
 }
+
+.membership-section {
+    background-color: #071629;
+    width: 100%;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 50px;
+}
+
+.mhead {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.free {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.membership-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    text-align: center;
+    margin: 60px 10px;
+}
+
+.membership {
+    padding:0px 60px;
+}
+
+.mshead {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.mscon {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.mbutton {
+    margin-top: 20px;
+}
