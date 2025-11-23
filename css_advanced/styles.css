@@ -391,14 +391,6 @@ h1 {
     padding: 5px 30px;
 }
 
-.tutorial {
-    display: flex;
-    justify-content: space-around;
-    align-items: space-around;
-    text-align: left;
-    padding: 5px 30px;
-}
-
 .smile {
     width: 20%;
     font-weight: 700;
@@ -497,6 +489,16 @@ h1 {
 .mbutton {
     margin-top: 20px;
 }
+
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+    color: #071629;
+}
+
 .faq {
     display: flex;
     justify-content: space-around;
