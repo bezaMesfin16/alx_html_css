@@ -234,3 +234,159 @@ nav>a {
     justify-content: center;
     align-items: center;
 }
+
+h1 {
+    font-size: 7.5rem;
+    text-align: center;
+    margin-bottom: 0rem;
+    margin-top: 12rem;
+    font-weight: 700;
+}
+
+.sgl {
+    margin-top: 0rem;
+    word-spacing: 3.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.first-button {
+    margin-top: 2rem;
+}
+
+.pro-sect {
+    margin-top: 8rem;
+}
+
+.heading2 {
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: normal;
+    line-height: normal;
+}
+
+.learn {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.pros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 9.375rem;
+    text-align: var(--font-align);
+    align-items: center;
+    padding-top: 6rem;
+}
+
+.pros>div {
+    padding-left: 7rem;
+}
+
+.pros>div.name {
+    line-height: 1.69rem;
+    font-size: 1.125rem;
+    font-weight: 900;
+}
+
+.pro-content {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.blank{
+    background-color: #071629;
+    width: 100%;
+    margin-top: 0rem;
+    padding-top: 0rem;
+    height: 6rem;
+}
+
+/* TESTIMONIAL SECTION */
+
+#testimonial-section{
+    width: 100%;
+    background-color: var(--color-primary);
+}
+
+.testimonial {
+    padding: 80px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    font-size: 1.375rem;
+    text-align: left;
+}
+
+.qcontent {
+    width: 56%;
+    padding-left: 60px;
+    margin-top: 7px;
+}
+
+.qname {
+    font-weight: 700;
+    line-height: 2.1rem;
+    margin-bottom: 0px;
+}
+
+.qtitle {
+    font-weight: 400;
+    line-height: 0rem;
+    font-style: italic;
+    padding-top: 0px;
+}
+
+.img-parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 2px 4px 0px rgba(7, 22, 41, 0.18);
+}
+
+.image2 {
+    position: absolute;
+    top: 50px;
+    left: 90px;
+}
+
+.tutorial-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.thead {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'source-sans-pro';
+    font-weight: 400;
+    color: var(--color-light-black);
+    padding: 50px 0px;
+}
+
+.popular {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.tutorial {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    text-align: left;
+    padding: 5px 30px;
+}
