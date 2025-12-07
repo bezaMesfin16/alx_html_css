@@ -7,31 +7,48 @@
   src: url(/css_advanced/Fonts/spincycle_ot.otf);
 }
 
-* {
-  font-family: "Source Sans Pro", sans-serif;
-  background: none;
-  color: #fff;
-  padding: 0;
-  margin: 0;
+:root {
+  --bg-color: #0b0b0b;
+  --accent: #ff6565;
+  --text: #ffffff;
+  --max-width: 1400px;
+  --nav-height: 70px;
+}
+
+/* Reset & sensible defaults */
+*, *::before, *::after {
   box-sizing: border-box;
-  max-width: 1400px;
-  text-decoration: none;
-  color: #fff;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
 body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text);
   background-image: url(./images/headphones_hero_1.jpg);
-  background-position: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
+
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; height: auto; display: block; }
 /*Mobile screen styling*/
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  min-width: 247px;
-  height: auto;
-  margin: 29px 21px 0;
+  justify-content: space-between;
+  padding: 18px 24px;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 .navbar-links ul {
   display: none;
@@ -39,30 +56,17 @@ nav {
 nav img {
   width: 161px;
   height: 32px;
-  margin-left: 66px;
+  margin-left: 0;
 }
 
-#toggle-button {
+.toggle-input {
   display: none;
 }
-.check-btn .fa-bars {
-  display: block;
-}
-.check-btn .fa-times {
-  /* Hide the "X" icon by default */
-  display: none;
-}
-#toggle-button:checked + .check-btn .fa-bars {
-  /* When the checkbox is checked, hide the hamburger icon */
-  display: none;
-}
-#toggle-button:checked + .check-btn .fa-times {
-  /* When the checkbox is checked, show the "X" icon */
-  display: block;
-}
-
-#toggle-button:checked ~ .navbar-links ul {
-  /* When the checkbox is checked, show the navigation menu */
+.check-btn .fa-bars { display: block; }
+.check-btn .fa-times { display: none; }
+.toggle-input:checked + .check-btn .fa-bars { display: none; }
+.toggle-input:checked + .check-btn .fa-times { display: block; }
+.toggle-input:checked ~ .navbar-links ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,9 +75,15 @@ nav img {
 .navbar-links ul {
   /* Style for menu items in the mobile view */
   position: absolute;
-  top: 70px;
-  left: 100px;
+  top: calc(var(--nav-height) + 10px);
+  left: 50%;
+  transform: translateX(-50%);
   list-style-type: none;
+  background: rgba(0,0,0,0.45);
+  padding: 12px 18px;
+  border-radius: 8px;
+  gap: 6px;
+  transition: opacity 220ms ease, transform 220ms ease;
 }
 
 .navbar-links a {
@@ -83,11 +93,16 @@ nav img {
 .navbar-links a:hover {
   color: #ff6565;
 }
+.navbar-links a:focus {
+  outline: 3px solid rgba(255,101,101,0.25);
+  outline-offset: 2px;
+}
 .main-part {
   display: flex;
   flex-direction: column;
   margin: 266px auto 106px auto;
-  width: 357px;
+  width: 90%;
+  max-width: 420px;
   height: auto;
   text-align: center;
   align-items: center;
@@ -104,7 +119,10 @@ nav img {
   font-weight: bold;
   font-size: 14px;
   border: none;
+  cursor: pointer;
+  transition: background-color 160ms ease, transform 120ms ease;
 }
+.main-part button:hover { background-color: color-mix(in srgb, var(--accent) 85%, black 15%); transform: translateY(-2px); }
 .lorem-p1 {
   width: 279px;
   height: auto;
@@ -117,8 +135,9 @@ nav img {
 }
 .main-part h1 {
   width: 100%;
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.05;
 }
 
 /*Tablet screen styling*/
@@ -130,15 +149,8 @@ nav img {
     flex: 1 1 100%;
     justify-content: space-between;
   }
-  .toggle-button {
-    display: none;
-  }
-  .check-btn {
-    display: none;
-  }
-  #toggle-button:checked ~ .navbar-links ul {
-    display: none;
-  }
+  .check-btn { display: none; }
+  .toggle-input { display: none; }
 
   .navbar-links ul {
     display: flex;
@@ -161,7 +173,7 @@ nav img {
   .main-part {
     flex: 1 1 auto;
     margin: 311px auto 115px;
-    min-width: 637px;
+    min-width: 0;
   }
   .lorem-p1 {
     width: 100%;
@@ -177,8 +189,8 @@ nav img {
 /*Desktop screen styling*/
 @media screen and (min-width: 1200px) {
   nav {
-    min-width: 1000px;
-    margin: 27.12px auto;
+    max-width: var(--max-width);
+    margin: 27px auto;
     flex: 1 1 100%;
   }
 }
